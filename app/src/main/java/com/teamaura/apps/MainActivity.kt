@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.fragment.app.FragmentTransaction
+import com.google.firebase.FirebaseApp
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), LoginFragment.OnFragmentInteractionListener, PrincipalFragment.OnFragmentInteractionListener, RegistroFragment.OnFragmentInteractionListener {
@@ -16,14 +18,11 @@ class MainActivity : AppCompatActivity(), LoginFragment.OnFragmentInteractionLis
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        fragment1.setOnClickListener {
-
-        }
-        fragment2.setOnClickListener {
-
-        }
-        fragment3.setOnClickListener {
-
+        FirebaseApp.initializeApp(this)
+        if(FirebaseAuth.getInstance().currentUser!= null){
+            transicion_principal()
+        }else{
+            transicion_login()
         }
     }
     fun transicion_login(){
@@ -60,4 +59,7 @@ class MainActivity : AppCompatActivity(), LoginFragment.OnFragmentInteractionLis
             .commit()
     }
 
+    override fun onBackPressed() {
+        finish()
+    }
 }

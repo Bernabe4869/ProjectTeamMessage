@@ -12,28 +12,8 @@
             android:id="@+id/contenedor_principal"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/fragment1">
+            app:layout_constraintBottom_toBottomOf="parent">
 
     </FrameLayout>
-    <Button
-            android:text="Fragment1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fragment1" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
-            android:layout_marginBottom="30dp" app:layout_constraintBottom_toBottomOf="parent"/>
-    <Button
-            android:text="Fragment2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fragment2"
-            app:layout_constraintTop_toTopOf="@+id/fragment1" app:layout_constraintBottom_toBottomOf="@+id/fragment1"
-            app:layout_constraintStart_toEndOf="@+id/fragment1" android:layout_marginStart="16dp"/>
-    <Button
-            android:text="Fragment3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fragment3"
-            app:layout_constraintTop_toTopOf="@+id/fragment2" app:layout_constraintBottom_toBottomOf="@+id/fragment2"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
-            app:layout_constraintStart_toEndOf="@+id/fragment2" android:layout_marginStart="16dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

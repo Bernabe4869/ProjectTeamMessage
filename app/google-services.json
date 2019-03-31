@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "432581167041",
+    "firebase_url": "https://projectteammessagepruebaberna.firebaseio.com",
+    "project_id": "projectteammessagepruebaberna",
+    "storage_bucket": "projectteammessagepruebaberna.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432581167041:android:158b6a80228d3b51",
+        "android_client_info": {
+          "package_name": "com.teamaura.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432581167041-6k2p3asd4iirbua4eseaj6qintpohsi0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamaura.apps",
+            "certificate_hash": "3e772edc9ed818a41ceb5904fd0f67de45ec5e74"
+          }
+        },
+        {
+          "client_id": "432581167041-vjgec8h22r3sjlnghrgc6dvjnk59ge8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIUW_BwG1mZzileopBIfE2BJhEcx2s9fw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432581167041-vjgec8h22r3sjlnghrgc6dvjnk59ge8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
